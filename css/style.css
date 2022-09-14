@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+
 body{
-    color: blueviolet;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+}
+
+.s-center{
+    text-align: center;
+}
+
+@media screen and (min-width:1024px){
+    .s-center{
+        text-align: left;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.menu{
+    width: 100% !important;
+    height: 70px !important;
 }

@@ -4,10 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css"> <!-- Fichero para normalizar estilos entre navegadores -->
+    <link rel="stylesheet" href="css/style_menu.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/graphic.css">
+    <title>Litzi Sánchez</title>
 </head>
 <body>
-    <h1>AQUÍ ESTARÁ MI PORTAFOLIO</h1>
+    <!-- Menu pricipal -->
+    <nav class="menu">
+        <section class="menu_container">
+            <h1 class="menu_logo">Litzi Sánchez</h1>
+
+            <ul class="menu_links">
+                <li class="menu_item">
+                    <a href="#" class="menu_link">¿Quién soy?</a>
+                </li>
+    
+                <li class="menu_item menu_item--show">
+                    <a href="#" class="menu_link">Desarrollo Web <img src="icons/down-arrow.svg" alt="" class="menu_arrow"> </a>
+                    <ul class="menu_nesting">
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Acerca de 1</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Acerca de 2</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Acerca de 3</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu_item menu_item--show">
+                    <a href="#" class="menu_link">Programación <img src="icons/down-arrow.svg" alt="" class="menu_arrow"></a>
+                    <ul class="menu_nesting">
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Proyecto 1</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Proyecto 2</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Proyecto 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="menu_item menu_item--show">
+                    <a href="#" class="menu_link">Diseño <img src="icons/down-arrow.svg" alt="" class="menu_arrow"></a>
+                    <ul class="menu_nesting">
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Proyecto 1</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Proyecto 2</a>
+                        </li>
+                        <li class="menu_inside">
+                            <a href="#" class="menu_link menu_link--inside">Proyecto 3</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu_item">
+                    <a href="#" class="menu_link">Contacto</a>
+                </li>
+            </ul>
+            <div class="menu_hamburguer">
+                <img src="icons/menu.svg" alt="" class="menu_img">
+            </div>
+        </section>
+    </nav>
+<!-- Banner -->
+    <section class="main-banner">
+        <!-- grid-container -->
+        <div class="grid-container">
+            <!-- banner-container -->
+            <div class="content">
+                <!-- Titulo -->
+            <h1 class="title s-center">
+                <span class="line-1">Litzi Sánchez</span>
+                <br>
+                <span class="line-2">Diseño y Programación.</span>
+            </h1>
+            <!-- Descripción -->
+            <p class="description s-center">
+                Conoce mis proyectos de diseño gráfico, diseño UI, desarrollo web front-end y programación.
+            </p>
+            </div>
+            
+            <!-- Grafico -->
+            <div class="graphic">
+                <img id="animation" src="img/Litzi.gif" alt="" class="graphic-img">
+                <div class="graphic-circles absolute">
+                    <img src="img/circle1.png" alt="" class="graphic-logo absolute">
+                    <img src="img/circle2.png" alt="" class="graphic-circle-1 absolute">
+                    <img src="img/circle3.png" alt="" class="graphic-circle-2 absolute">
+                    <img src="img/circle4.png" alt="" class="graphic-energy absolute">
+                </div>
+        </div>
+    </section>
+    <script src="js/menu.js"></script>
 </body>
 </html>
