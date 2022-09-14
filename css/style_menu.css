@@ -102,7 +102,11 @@ body{
     display: block;
     width: 36px;
 }
-.menu_container h1{
+.menu_container a{
+    text-decoration: none;
+    color: #FFF;
+}
+.menu_container a h1{
     letter-spacing: 10px;
     font-weight: bold;
 }
