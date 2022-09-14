@@ -102,11 +102,15 @@ body{
     display: block;
     width: 36px;
 }
-h1{
-    letter-spacing: 5px;
+.menu_container h1{
+    letter-spacing: 10px;
+    font-weight: bold;
 }
 
 @media (max-width:800px){
+    .menu_container h1{
+        font-size: 1.5rem;
+    }
     .menu_hamburguer{
         display: flex;
     }

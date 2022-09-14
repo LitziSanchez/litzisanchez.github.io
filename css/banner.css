@@ -29,18 +29,26 @@
 }
 /*Titulo y descripción*/
 .title{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2.2rem;
-}
-.line-1{
-    font-size: 3rem;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
 }
 
+.line-0{
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+
+.line-1{
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
 .line-2{
+    font-size: 1.5rem;
     color: #1c084d;
     font-weight: bold;
+    text-transform: uppercase;
 }
 .description{
     font-size: 1rem;
@@ -48,11 +56,14 @@
 }
 
 @media screen and (min-width: 1024px){/*Normal*/
-    .line-1{
+    .line-0{
         font-size: 4rem;
     }
+    .line-1{
+        font-size: 3.5rem;
+    }
     .line-2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .description{
         font-size: 1.2rem;
