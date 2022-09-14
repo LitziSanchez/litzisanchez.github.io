@@ -102,6 +102,9 @@ body{
     display: block;
     width: 36px;
 }
+h1{
+    letter-spacing: 5px;
+}
 
 @media (max-width:800px){
     .menu_hamburguer{
