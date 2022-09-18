@@ -3,6 +3,7 @@
 
 .main-banner{
     background-image: linear-gradient(-225deg, #880645 0%, #720378 40%, #321575 100%);
+    margin-top: 70px;
     padding-top: 3rem;
     height: 100vh;
     width: 100%;
@@ -28,6 +29,17 @@
         margin: auto;
     }
 }
+
+.s-center{
+    text-align: center;
+}
+
+@media screen and (min-width:1024px){
+    .s-center{
+        text-align: left;
+    }
+}
+
 /*Titulo y descripción*/
 .title{
     font-family: 'Poppins', sans-serif;
@@ -54,8 +66,19 @@
 .description{
     font-size: 1rem;
     color: #FFF;
+    padding-bottom: 2em;
 }
-
+.btn{
+    padding: 0.5em 1.2em;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #1c084d;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.btn:hover{
+    background-color: #321575;
+}
 @media screen and (min-width: 1024px){/*Normal*/
     .line-0{
         font-size: 4rem;
@@ -68,6 +91,9 @@
     }
     .description{
         font-size: 1.2rem;
+    }
+    .btn{
+        font-size: 1.3em;
     }
 }
 /*Fin titulo y descripcion*/

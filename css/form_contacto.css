@@ -1,0 +1,67 @@
+.form_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-225deg, #880645 0%, #720378 40%, #321575 100%);
+    height: 100vh;
+
+}
+
+.form_titulo{
+    margin-top: 2em;
+    padding: 2em 2em;
+    background-color: #FFF;
+    width: 80%;
+    border-radius: 25px 0px;
+}
+.form_titulo h3{
+    text-align: center;
+}
+.form{
+    margin-top: 1em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 2em;
+}
+
+form input, textarea{
+    font-size: 1.1em;
+    border-radius: 15px;
+    padding: 0.5em 0.5em;
+    width: 50%;
+    margin-bottom: 1em;
+    border: 0px;
+    border-bottom: #b02267 4px solid;
+}
+
+form label{
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    color: #FFF;
+}
+
+form button{
+    width: 100px;
+    padding: 1em 1em;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: #880645 ;
+    color: #fff;
+    border: #FFF 2px solid;
+}
+
+form button:hover{
+    background-color: #b02267;
+}
+
+@media screen and (max-width:800px){
+    form input, textarea{
+        width: 90%;
+    }
+}

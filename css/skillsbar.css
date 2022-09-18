@@ -48,7 +48,6 @@
 .bar .progress-line span{
     height: 100%;
     width: 80%;
-    background: #6665ee;
     position: absolute;
     border-radius: 10px;
     transform: scaleX(0);
@@ -61,20 +60,46 @@
     }
     
 }
-.progress-line.html span{
+.progress-line.sk1 span{ /*HTML*/
     width: 90%;
+    background-color: #D94625;
 }
-.progress-line.css span{
+.progress-line.sk2 span{ /*CSS*/
     width: 80%;
+    background-color: #0477BF;
 }
-.progress-line.php span{
-    width: 40%;
+.progress-line.sk3 span{ /*JS*/
+    width: 25%;
+    background-color: #6BA614;
 }
-.progress-line.python span{
-    width: 40%;
+.progress-line.sk4 span{ /*PHP*/
+    width: 25%;
+    background-color: #637ABF;
 }
-.progress-line.mysql span{
+.progress-line.sk5 span{ /*SQL*/
+    width: 30%;
+    background-color: #F28705;
+}
+
+.progress-line.sk6 span{ /*AI*/
+    width: 80%;
+    background-color: #F26A1B;
+}
+.progress-line.sk7 span{ /*PS*/
     width: 50%;
+    background-color: #05C7F2;
+}
+.progress-line.sk8 span{ /*Figma*/
+    width: 50%; 
+    background-color: #9552F2;
+}
+.progress-line.sk9 span{ /*Power BI*/
+    width: 50%;
+    background-color: #F2CC0C;
+}
+.progress-line.sk10 span{ /*Python*/
+    width: 30%;
+    background-color: #0477BF;
 }
 
 .bar .progress-line span::before{
@@ -113,20 +138,36 @@
     
 }
 
-.progress-line.html span::after{
+.progress-line.sk1 span::after{
     content: "90%";
 }
-.progress-line.css span::after{
+.progress-line.sk2 span::after{
     content: "80%";
 }
-.progress-line.php span::after{
-    content: "40%";
+.progress-line.sk3 span::after{
+    content: "25%";
 }
-.progress-line.python span::after{
-    content: "40%";
+.progress-line.sk4 span::after{
+    content: "25%";
 }
-.progress-line.mysql span::after{
+.progress-line.sk5 span::after{
+    content: "30%";
+}
+
+.progress-line.sk6 span::after{
+    content: "80%";
+}
+.progress-line.sk7 span::after{
     content: "50%";
+}
+.progress-line.sk8 span::after{
+    content: "50%";
+}
+.progress-line.sk9 span::after{
+    content: "50%";
+}
+.progress-line.sk10 span::after{
+    content: "30%";
 }
 
 @media screen and (max-width:800px) {
