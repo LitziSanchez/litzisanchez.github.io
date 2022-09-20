@@ -1,0 +1,200 @@
+/*SLIDER PARA CONTENIDO 1: Imagen y Texto*/
+.container{
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slider h1{
+    margin-bottom: -1em;
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: .5em;
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: all 500ms ease;
+    border-radius: 25px;
+    padding: 2em 2em;
+    background-color: #FFF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slider__body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #321575;
+}
+#principal{
+    color: #880645;
+    border-radius: 25px;
+    text-align: center;
+}
+.slider__texts{
+    padding: 1em 1.5em;
+    text-align: justify;
+}
+.slider__text{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+}
+.slider__picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider__img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider__arrow:nth-child(2){
+    justify-self: end;
+}
+
+@media (max-width: 1200px){
+    .slider__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+        padding: .25em .25em;
+    }
+    .slider__picture{
+        grid-row: 2/2;
+    }
+    .slider__img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px){
+    .slider__img{
+        width: 250px;
+        height: 250px;
+    }
+    .slider__text{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}
+
+/* SLIDER PARA IMAGENES Y TEXTO DESCRIPTIVO, AUTOMATICO INFINITO */
+.aslider{
+    height: 100vh;
+    width: 80%;
+    background-color: #321575;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: #FFF;
+    margin-bottom: 6em;
+}
+.aslider h1, h3{
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: justify;
+}
+.aslider__img{
+    margin-top: 1em;
+    background-image: url(../img/diseno/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60%;
+    width: 90%;
+    border-radius: 25px 25px  0px 0px;
+    animation: animate 12s linear infinite;
+}
+
+@keyframes animate{
+    25%{
+        background-image: url(../img/diseno/banner1.jpg);
+    }
+    50%{
+        background-image: url(../img/diseno/banner2.png);
+    }
+    75%{
+        background-image: url(../img/diseno/banner3.jfif);
+    }
+    100%{
+        background-image: url(../img/diseno/banner4.png);
+    }
+}
+
+.aslider__text{
+    width: 90%;
+    background-color: #321575;
+    border-radius: 0px 0px 25px 25px;
+    padding: 1em 1em;
+    text-align: center;
+    color: #FFF;
+
+}
+.aslider__text:after{
+    content: "BANNERS";
+    animation: animate_text 12s infinite;
+}
+
+@keyframes animate_text{
+    25%{
+        content: "Imagen para anuncio publicitario en redes sociales.";
+    }
+    50%{
+        content: "Portada de Facebook para el proyecto Aprende con Leo el leoncito.";
+    }
+    75%{
+        content: "Portada para página de facebook.";
+    }
+    100%{
+        content: "Portada de canal de Youtube de equipo de robótica.";
+    }
+}
+
+@media screen and (max-width:1200px){
+    .aslider{
+        width: 100%;
+    }
+    .aslider__img{
+        height: 300px;
+    }
+}
+@media screen and (max-width:600px){
+    
+    .aslider__img{
+        height: 250px;
+    }
+}

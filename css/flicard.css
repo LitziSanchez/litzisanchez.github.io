@@ -1,0 +1,113 @@
+.tarjetas{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.tarjetas_body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tarjeta{
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+.tarjeta .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: hidden;
+    transition: .5s;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px #000;
+}
+
+.tarjeta .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.tarjeta .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.tarjeta .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: #321575;
+    text-align: center;
+    border-radius: 0px 0px 25px 25px;
+    letter-spacing: 1px;
+}
+
+.tarjeta .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: #321575;;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tarjeta .back .link{
+    border-top: solid 1px #f3f3f3;
+    padding-top: 1em;
+    height: 50px;
+}
+.tarjeta .back .link a{
+    color: #f3f3f3;
+    text-decoration: none;
+    background-color: #1c084d;;
+    border: #FFF 2px solid;
+    padding: .5em .5em;
+    border-radius: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.tarjeta .back .link a:hover{
+    color: #1c084d;;
+    background-color: #FFF;
+}
+.tarjeta .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.tarjeta .back p{
+    letter-spacing: 1px;
+}
+.tarjeta:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.tarjeta:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+@media screen and (max-width:1200px){
+    .tarjetas{
+        height: 120vh;
+    }
+    .tarjetas_body{
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .tarjeta{
+        height: 250px;
+    }
+}
