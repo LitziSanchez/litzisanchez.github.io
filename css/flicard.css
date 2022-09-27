@@ -1,10 +1,11 @@
 .tarjetas{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-top: 3em;
 }
 .tarjetas_body{
     width: 100%;
@@ -16,6 +17,7 @@
     position: relative;
     width: 380px;
     height: 250px;
+    margin-top: 1.5em;
 }
 .tarjeta .face{
     position: absolute;
@@ -24,7 +26,7 @@
     backface-visibility: hidden;
     border-radius: hidden;
     transition: .5s;
-    border-radius: 25px;
+    border-radius: 5px;
     box-shadow: 0 5px 20px #000;
 }
 
@@ -37,7 +39,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .tarjeta .back{
@@ -62,7 +64,7 @@
     background-color: #1c084d;;
     border: #FFF 2px solid;
     padding: .5em .5em;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -84,6 +86,30 @@
 .tarjeta:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+
+.titulo_section{
+    text-align: center;
+}
+
+.titulo_section p{
+    font-size: 1.2em;
+    margin-bottom: 0.6em;
+}
+.titulo_section a{
+    text-decoration: none;
+    padding: 0.5em 0.5em;
+    border-radius: 15px;
+    margin-left: 1em;
+    color: #880645;
+    background-color: #FFF;
+    border: #880645 2px solid;
+    font-weight: bold;
+    letter-spacing: 1px;
+   }
+   .titulo_section a:hover{
+       color: #FFF;
+    background-color: #880645;
+   }
 
 @media screen and (max-width:1200px){
     .tarjetas{

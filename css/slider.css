@@ -1,27 +1,24 @@
 /*SLIDER PARA CONTENIDO 1: Imagen y Texto*/
-.container{
-    width: 90%;
-    min-height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
 .slider{
-    padding: 40px 0;
+    min-height: 100vh;
+   padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1em 1em;
 }
-.slider h1{
-    margin-bottom: -1em;
-}
-
 .slider__container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     align-items: center;
     gap: .5em;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
 }
 
 .slider__body{
@@ -34,9 +31,30 @@
     align-items: center;
     transition: all 500ms ease;
     border-radius: 25px;
-    padding: 2em 2em;
+    padding: 1em 1em;
     background-color: #FFF;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+.slider_textos{
+    text-align: center;
+}
+.slider p{
+    font-size: 1.2em;
+    padding-bottom: 0.25em;
+}
+.slider a{
+    text-decoration: none;
+    border-radius: 15px;
+    border: #880645 2px solid;
+    color: #880645;
+    background-color: #FFF;
+    padding: 0.25em 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.slider a:hover{
+    color: #FFF;
+    background-color: #880645;
 }
 
 .slider__body--show{
@@ -47,6 +65,7 @@
     font-size: 2rem;
     margin-bottom: 20px;
     color: #321575;
+    text-align: center;
 }
 #principal{
     color: #880645;
@@ -95,25 +114,30 @@
         grid-row: 2/2;
     }
     .slider__img{
-        width: 350px;
-        height: 350px;
+        width: 80%;
+        height: 420px;
     }
 }
 
 @media (max-width: 600px){
     .slider__img{
-        width: 250px;
         height: 250px;
+        width: 250px;
     }
     .slider__text{
         font-size: 18px;
         line-height: 1.5;
+    }
+    .slider_textos p{
+        margin-left: 2em;
+        margin-right: 2em;
     }
 }
 
 /* SLIDER PARA IMAGENES Y TEXTO DESCRIPTIVO, AUTOMATICO INFINITO */
 .aslider{
     height: 100vh;
+    padding-top: 70px;
     width: 80%;
     background-color: #321575;
     display: flex;
@@ -124,10 +148,26 @@
     background-color: #FFF;
     margin-bottom: 6em;
 }
-.aslider h1, h3{
+.aslider h1,h3{
     padding-left: 2em;
     padding-right: 2em;
-    text-align: justify;
+    text-align: center;
+}
+.aslider a{
+ text-decoration: none;
+ padding: 0.5em 0.5em;
+ border-radius: 15px;
+ margin-left: 1em;
+ color: #880645;
+ background-color: #FFF;
+ border: #880645 2px solid;
+ font-weight: bold;
+ letter-spacing: 1px;
+ font-size: 1.2em;
+}
+.aslider a:hover{
+    color: #FFF;
+ background-color: #880645;
 }
 .aslider__img{
     margin-top: 1em;
@@ -137,21 +177,24 @@
     height: 60%;
     width: 90%;
     border-radius: 25px 25px  0px 0px;
-    animation: animate 12s linear infinite;
+    animation: animate 15s linear infinite;
 }
 
 @keyframes animate{
-    25%{
+    20%{
         background-image: url(../img/diseno/banner1.jpg);
     }
-    50%{
+    40%{
         background-image: url(../img/diseno/banner2.png);
     }
-    75%{
+    60%{
         background-image: url(../img/diseno/banner3.jfif);
     }
-    100%{
+    80%{
         background-image: url(../img/diseno/banner4.png);
+    }
+    100%{
+        background-image: url(../img/diseno/miawxtore.png);
     }
 }
 
@@ -166,21 +209,24 @@
 }
 .aslider__text:after{
     content: "BANNERS";
-    animation: animate_text 12s infinite;
+    animation: animate_text 15s linear infinite;
 }
 
 @keyframes animate_text{
-    25%{
+    20%{
         content: "Imagen para anuncio publicitario en redes sociales.";
     }
-    50%{
+    40%{
         content: "Portada de Facebook para el proyecto Aprende con Leo el leoncito.";
     }
-    75%{
+    60%{
         content: "Portada para página de facebook.";
     }
-    100%{
+    80%{
         content: "Portada de canal de Youtube de equipo de robótica.";
+    }
+    100%{
+        content: "Portada de Facebook para tienda digital.";
     }
 }
 
