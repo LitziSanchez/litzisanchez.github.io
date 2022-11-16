@@ -1,0 +1,12 @@
+.pdf-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe{
+    width: 80%;
+    height: 100vh;
+}
