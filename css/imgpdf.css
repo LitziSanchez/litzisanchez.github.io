@@ -25,5 +25,6 @@ li img{
 @media  screen and (max-width:800px) {
     .list-img{
         width: 100%;
+        background-color: #00af8f86;
     }
  }
